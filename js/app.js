@@ -85,13 +85,16 @@ function calculate() {
         </tr>
       `;
     }
+    if (counter == 5) document.querySelector(".modal").style.top = "20%";
+    if (counter == 7) document.querySelector(".modal").style.top = "10%";
+    if (counter > 9) document.querySelector(".modal").style.top = 0;
   });
 
   table.innerHTML += `
     <tr>
         <th colspan='5'>${result}</th>
     </tr>
-  `
+  `;
 }
 
 function add() {
@@ -99,9 +102,9 @@ function add() {
   document.querySelector(".overlay").classList.add("hidden");
 }
 
-function newClient(){
-  add()
-  counts.forEach(count=>{
-    count.textContent = 0
-  })
+function newClient() {
+  add();
+  counts.forEach((count) => {
+    count.textContent = 0;
+  });
 }

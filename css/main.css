@@ -49,14 +49,17 @@ button {
 
 .food__description {
   display: flex;
+  margin-top: 10px;
   column-gap: 10px;
   position: relative;
+  align-items: center;
   justify-content: center;
 }
 
 .food__count-minus,
 .food__count-add {
-  width: 30px;
+  width: 50px;
+  padding: 10px;
   font-size: 20px;
   background-color: #000;
 }

@@ -37,6 +37,10 @@ button {
   background-color: #99a09628;
 }
 
+.flex {
+  display: flex;
+}
+
 .food__img {
   width: 99%;
   height: 150px;
@@ -97,7 +101,7 @@ button {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
 
-.btn-primary{
+.btn-primary {
   display: block;
   display: block;
   padding: 12px 20px;

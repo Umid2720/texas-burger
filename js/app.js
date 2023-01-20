@@ -98,3 +98,10 @@ function add() {
   document.querySelector(".modal").classList.add("hidden");
   document.querySelector(".overlay").classList.add("hidden");
 }
+
+function newClient(){
+  add()
+  counts.forEach(count=>{
+    count.textContent = 0
+  })
+}

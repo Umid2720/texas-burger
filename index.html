@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Texas Burger</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="foods"></div>
 
-      <div class="modal hidden">
-        <h1>Texas Burger</h1>
-        <table width="99%" border="1" align="center"></table>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texas Burger</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+</head>
 
-        <div class="flex">
-          <button class="btn-primary" onclick="newClient()">Yangi hisob</button>
-          <button class="btn-primary" onclick="window.print()">
-            Chek chiqarish
-          </button>
-        </div>
-        <div class="contact">
-          <div class="socials">
-            <a href=""></a>
-          </div>
+<body>
+  <div class="container">
+    <div class="foods"></div>
+
+    <div class="modal hidden" id="modal">
+      <h1>Texas Burger</h1>
+      <table width="99%" border="1" align="center"></table>
+
+      <div class="flex">
+        <button class="btn-primary" onclick="newClient()">Yangi hisob</button>
+        <button class="btn-primary" id="printChek">
+          Chek chiqarish
+        </button>
+      </div>
+      <div class="contact">
+        <div class="socials">
+          <a href=""></a>
         </div>
       </div>
-      <div class="overlay hidden" onclick="add()"></div>
-
-      <button class="calculate" onclick="calculate()">Hisoblash</button>
-      <script src="js/app.js"></script>
     </div>
-  </body>
+    <div class="overlay hidden" onclick="add()"></div>
+
+    <button class="calculate" onclick="calculate()">Hisoblash</button>
+    <script src="js/app.js"></script>
+    <script src="  https://printjs-4de6.kxcdn.com/print.min.js
+"></script>
+  </div>
+</body>
+
 </html>

@@ -108,3 +108,17 @@ function newClient() {
     count.textContent = 0;
   });
 }
+
+const printBtn = document.getElementById('printChek')
+printBtn.addEventListener('click', () => {
+  printJS({
+    printable: 'modal',
+    type: 'html',
+    style: `
+    .btn-primary{
+      display:none;
+    }
+    `
+  })
+})
+

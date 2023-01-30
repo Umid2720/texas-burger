@@ -75,7 +75,7 @@ button {
 
 .calculate {
   width: 99%;
-  bottom: 0;
+  bottom: 1px;
   z-index: 10;
   font-size: 20px;
   position: sticky;

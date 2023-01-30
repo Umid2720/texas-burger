@@ -37,6 +37,10 @@ button {
   background-color: #99a09628;
 }
 
+.food:last-child{
+  margin-bottom: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -75,10 +79,10 @@ button {
 
 .calculate {
   width: 99%;
-  bottom: 1px;
+  bottom: 0;
   z-index: 10;
   font-size: 20px;
-  position: sticky;
+  position: fixed;
   margin-left: auto;
   padding: 20px 10px;
   background-color: #000;
